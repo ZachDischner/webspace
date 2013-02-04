@@ -1,4 +1,12 @@
 Webspace::Application.routes.draw do
+
+  root               to: 'static_pages#me'
+  match '/resume',   to: 'static_pages#resume'
+  match '/projects', to: 'static_pages#projects'
+  match '/wine',     to: 'static_pages#wine'
+  match '/links',    to: 'static_pages#links'
+  match '/contact',  to: 'static_pages#contact'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

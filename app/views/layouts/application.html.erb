@@ -1,14 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Webspace</title>
+  <title>Kevin Dinkel</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+
+  <link rel="shortcut icon" href="/assets/rocket.ico" />
+
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37403873-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  </script>
+
 </head>
 <body>
 
+<aside id="pageimage">
+<img src="/assets/me_white.png" alt="Me." width="245" />
+</aside>
+
+<nav>
+<ul>
+<li><a href="/">Me</a></li>
+<li><a href="/resume">Resume</a></li>
+<li><a href="/projects">Projects</a></li>
+<li><a href="/wine">Wine</a></li>
+<li><a href="/links">Links</a></li>
+<li><a href="/contact">Contact</a></li>
+</ul>
+</nav>
+
+<section id="pagecontent">
+<header>
+<h1><text style="color:#6F6F6F"><%= full_header(yield(:title)) %></text></h1>
+</header>
+
 <%= yield %>
+
+</section>
+
+<footer>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">
+<img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png" /></a>
+<br />
+<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a href="http://kevindinkel.com">kevindinkel.com</a></span> 
+by <a xmlns:cc="http://creativecommons.org/ns#" href="http://kevindinkel.com/contact" property="cc:attributionName" rel="cc:attributionURL">Kevin Dinkel</a> 
+is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons BY-NC-SA License</a>.
+<br />
+Illustrations by the wonderful Lauren Gordon.
+</footer>
 
 </body>
 </html>
