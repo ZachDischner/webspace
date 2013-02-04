@@ -6,6 +6,8 @@ require "action_controller/railtie"
 require "action_mailer/railtie"
 require "active_resource/railtie"
 require "sprockets/railtie"
+
+config.assets.initialize_on_precompile = false # Hopefully fix heroku errors?
 # require "rails/test_unit/railtie"
 
 if defined?(Bundler)
