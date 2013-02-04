@@ -1,6 +1,6 @@
 
 <p>
-Cheers! My name is Kevin Dinkel, and you have found my <a href="/">personal website</a>.
+Cheers! My name is Kevin Dinkel, and you have found my <%= link_to 'personal website', '/' %>.
 See that guy to the left? That is me, or at least the 2 dimensional version of me that cruises around the interwebs. You can
 explore more about me using the link bar above ^^.
 </p>
@@ -8,11 +8,11 @@ explore more about me using the link bar above ^^.
 <p>
 <text style="font-weight: bold;">You can also find me at:</text>
 <ul>
-<li><a href="http://www.linkedin.com/pub/kevin-dinkel/5b/501/786/">LinkedIn</a></li>
-<li><a href="https://github.com/dinkelk">GitHub</a></li>
-<li><a href="http://stackoverflow.com/users/1743929/dinkelk">Stack Overflow</a></li>
-<li><a href="https://www.khanacademy.org/profile/dinkelk/">Khan Academy</a></li>
-<li><a href="http://www.codecademy.com/users/dinkelk">Codecademy</a></li>
-<li><a href="https://www.facebook.com/dinkelk">facebook</a></li>
+<li><%= link_to 'LinkedIn', 'http://www.linkedin.com/pub/kevin-dinkel/5b/501/786/', target: "_blank" %></li>
+<li><%= link_to 'GitHub', 'https://github.com/dinkelk', target: "_blank" %></li>
+<li><%= link_to 'Stack Overflow', 'http://stackoverflow.com/users/1743929/dinkelk', target: "_blank" %></li>
+<li><%= link_to 'Khan Academy', 'https://www.khanacademy.org/profile/dinkelk/', target: "_blank" %></li>
+<li><%= link_to 'Codecademy', 'http://www.codecademy.com/users/dinkelk', target: "_blank" %></li>
+<li><%= link_to 'facebook', 'https://www.facebook.com/dinkelk', target: "_blank" %></li>
 </ul>
 </p>
