@@ -39,7 +39,7 @@ ul.plain li{list-style:none}
 
 body
 {
-    width:900px;
+    width:1500px;
     height:auto;
     padding:3px;
     border:0px solid gray;
@@ -57,14 +57,15 @@ body
 }
 
 nav{
-    width:525px;
+    width:625px;
     height:auto;
-    padding:3px 9px 3px 0px;
+    padding:3px 9px 50px 3px;
     border:0 none;
     margin:3px 9px 3px 0px;
-    float:right;
+    float:left;
     overflow:overlay;
-    text-align:right
+    text-align:center;
+    font-size:22pt
 }
 
 nav ul{margin:0;padding:0}
@@ -73,18 +74,18 @@ nav ul li{display:inline;list-style:none;margin:0 5px 0;padding:0}
 
 #pagecontent
 {
-    width:625px;
+    width:925px;
     height:auto;
     padding:3px 9px 3px 0;
     border:0px none;
     margin:3px 9px 3px 0;
-    float:left;
+    float:center;
     //overflow:overlay;
     text-align:left
 }
 
 #pageimage{
-    width:245px;
+    width:auto;
     height:auto;
     padding:3px 0 3px 3px;
     border:0px none;
