@@ -1,26 +1,26 @@
-
 <p>
-I'm Zach Dischner! As I'm just developing this cyber-landscape, this is about all the site has to offer. Thanks for stopping by!
+  I'm Zach Dischner! As I'm just developing this cyber-landscape, this is about all the site has to offer. Thanks for
+  stopping by!
 </p>
-<br />
+<br/>
 <p style="font-size:20pt">
 
 
-<table width=50% align=center position=relative position-left=50%>
+
+
+<table class=container width=50% align=center position=relative position-left=50%>
   <tr>
     <!-- Linkedin-->
     <td align=center>
-      <div style="width:150px ;border:1px solid gray;padding:8px;border-radius:5px;background:#F1F1FF;
-              background-image:url('http://linkedin.com/favicon.ico');background-repeat:no-repeat; background-position:95% 50%;background-size:20px">
-        <%= link_to "http://www.linkedin.com/pub/zach-dischner/38/6a4/45b", target: "_blank" do %>  LinkedIn
+      <div id=Linkedin class=me-div style="background-image:url('http://linkedin.com/favicon.ico')">
+        <%= link_to "http://www.linkedin.com/pub/zach-dischner/38/6a4/45b", target: "_blank" do %> LinkedIn
         <% end %>
       </div>
     </td>
     <!-- ZD Photography-->
     <td align=center>
-      <div style="width:150px ;border:1px solid gray;padding:8px;border-radius:5px;background:#F1F1FF;
-              background-image:url('http://wix.com/favicon.ico');background-repeat:no-repeat; background-position:95% 50%;background-size:20px">
-        <%= link_to "http://zachdischner.wix.com/epicphotography", target: "_blank" do %>  Portfolio
+      <div id=Portfolio class=me-div style="background-image:url('http://wix.com/favicon.ico')">
+        <%= link_to "http://zachdischner.wix.com/epicphotography", target: "_blank" do %> Portfolio
         <% end %>
       </div>
     </td>
@@ -28,18 +28,16 @@ I'm Zach Dischner! As I'm just developing this cyber-landscape, this is about al
   <tr>
     <!-- flickr-->
     <td align=center>
-      <div style="width:150px ;border:1px solid gray;padding:8px;border-radius:5px;background:#F1F1FF;
-              background-image:url('http://flickr.com/favicon.ico');background-repeat:no-repeat; background-position:95% 50%;background-size:20px">
-        <%= link_to "http://www.flickr.com/photos/zachd1_618/", target: "_blank" do %>  Flickr
+      <div id=Flickr class=me-div style="background-image:url('http://flickr.com/favicon.ico')">
+        <lin class=h2><%= link_to "http://www.flickr.com/photos/zachd1_618/", target: "_blank" do %> Flickr </lin>
         <% end %>
       </div>
 
     </td>
     <!-- 500px-->
     <td align=center>
-      <div style="width:150px ;border:1px solid gray;padding:8px;border-radius:5px;background:#F1F1FF;
-              background-image:url('http://500px.com/favicon.ico');background-repeat:no-repeat; background-position:95% 50%;background-size:20px">
-        <%= link_to "http://500px.com/Zach_Dischner", target: "_blank" do %>  500px
+      <div id=500px class=me-div style="background-image:url('http://500px.com/favicon.ico')">
+        <%= link_to "http://500px.com/Zach_Dischner", target: "_blank" do %> 500px
         <% end %>
       </div>
     </td>
@@ -47,16 +45,14 @@ I'm Zach Dischner! As I'm just developing this cyber-landscape, this is about al
   <tr>
     <!-- GitHub-->
     <td align=center>
-      <div style="width:150px ;border:1px solid gray;padding:8px;border-radius:5px;background:#F1F1FF;
-              background-image:url('http://github.com/favicon.ico');background-repeat:no-repeat; background-position:95% 50%;background-size:20px">
-        <%= link_to "https://github.com/ZachDischner", target: "_blank" do %>  GitHub
+      <div id=Github class=me-div style="background-image:url('http://github.com/favicon.ico')">
+        <%= link_to "https://github.com/ZachDischner", target: "_blank" do %> GitHub
         <% end %>
       </div>
     </td>
     <!-- Stack Overflow-->
     <td align=center>
-      <div style="width:150px ;border:1px solid gray;padding:8px;border-radius:5px;background:#F1F1FF;
-              background-image:url('http://stackoverflow.com/favicon.ico');background-repeat:no-repeat; background-position:95% 50%;background-size:20px">
+      <div id=SO class=me-div style="background-image:url('http://stackoverflow.com/favicon.ico')">
         <%= link_to "http://stackoverflow.com/users/1176806/zachd1-618", target: "_blank" do %> Stack Overflow
         <% end %>
       </div>
@@ -65,48 +61,5 @@ I'm Zach Dischner! As I'm just developing this cyber-landscape, this is about al
 
 
 </table>
-<!--
 
-<ul>
-  <li>
-    <%= link_to "http://www.linkedin.com/pub/zach-dischner/38/6a4/45b", target: "_blank" do %>
-        <%= image_tag("http://linkedin.com/favicon.ico", alt: "LinkedIn", width: 25) %> LinkedIn
-    <% end %>
-  </li>
-
-  <li>
-    <%= link_to "http://zachdischner.wix.com/epicphotography", target: "_blank"  do %>
-        <%= image_tag("http://wix.com/favicon.ico", alt: "Zach Dischner Photography", width: 25) %> Zach Dischner Photography
-    <% end %>
-  </li>
-
-
-
-  <li>
-    <%= link_to "www.flickr.com/photos/zachd1_618/", target: "_blank" do %>
-        <%= image_tag("http://flickr.com/favicon.ico", alt: "Flickr", width: 25) %>  Flickr
-    <% end %>
-  </li>
-
-<li>
-  <%= link_to "http://500px.com/Zach_Dischner", target: "_blank" do %>
-      <%= image_tag("http://500px.com/favicon.ico", alt: "500px", width: 25) %> 500px
-  <% end %>
-</li>
-
-<li>
-  <%= link_to "https://github.com/ZachDischner", target: "_blank" do %>
-      <%= image_tag("http://github.com/favicon.ico", alt: "GitHub", width: 25) %>  GitHub
-  <% end %>
-</li>
-
-<li>
-  <%= link_to "http://stackoverflow.com/users/1176806/zachd1-618", target: "_blank" do %>
-      <%= image_tag("http://stackoverflow.com/favicon.ico", alt: "Stack Overflow", width: 25) %> Stack Overflow
-  <% end %>
-</li>
-
-</ul>
-
-!-->
 </p>

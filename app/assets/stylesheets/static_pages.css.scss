@@ -11,9 +11,9 @@ strong{font-weight:bold}
 
 a{text-decoration:none}
 
-a:link{color:#009999}
+a:link{color:#00BBBB}
 
-a:visited{color:#000066}
+a:visited{color:#00BBBB}
 
 a:hover{color:#FF9900}
 
@@ -39,7 +39,8 @@ ul.plain li{list-style:none}
 
 body
 {
-    width:1500px;
+    width:1300px;
+    align:left;
     height:auto;
     padding:3px;
     border:0px solid gray;
@@ -47,40 +48,30 @@ body
     margin-top:50px;
     float:none;
     overflow:overlay;
-    font-family:"Trebuchet MS",Helvetica,sans-serif;
+    font-family:"Trebuchet MS",Tahoma,sans-serif;
     letter-spacing:normal;
     word-spacing:normal;
     text-align:center;
     font-size:16px;
     line-height:22px;
-    font-weight:normal
-}
-
-nav{
-    width:625px;
-    height:auto;
-    padding:3px 9px 50px 3px;
-    border:0 none;
-    margin:3px 9px 3px 0px;
-    float:left;
-    overflow:overlay;
-    text-align:center;
-    font-size:22pt
+    font-weight:normal;
+    background-image: -webkit-radial-gradient(right center, ellipse farthest-corner, #FFFFFF 50%, #16291A 200%);
+    background-attachment:fixed
 }
 
 nav ul{margin:0;padding:0}
 
-nav ul li{display:inline;list-style:none;margin:0 5px 0;padding:0}
+nav ul li{display:inline;list-style:none;margin:0 5px 0;padding:-50px}
 
 #pagecontent
 {
-    width:925px;
+    width:750px;
     height:auto;
     padding:3px 9px 3px 0;
     border:0px none;
     margin:3px 9px 3px 0;
     float:center;
-    //overflow:overlay;
+    overflow:overlay;
     text-align:left
 }
 
@@ -93,7 +84,7 @@ nav ul li{display:inline;list-style:none;margin:0 5px 0;padding:0}
     float:left;
     overflow:overlay;
     text-align:center;
-    // background-image:url('/assets/me_white.png');
+    //background-image: -webkit-linear-gradient(top left, #FFFFFF 0%, #006C9E 100%);
 }
 
 footer{
@@ -108,5 +99,118 @@ footer{
     font-size:13px;
     line-height:19px;
     font-weight:normal
+}
+
+// Class for the clickable divs, linking my other sites
+.me-div {
+  width: 150px;
+  border: 1px solid gray;
+  padding: 8px;
+  border-radius: 5px;
+  background: #F1F1FF;
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  background-size: 20px
+}
+
+// Header
+h2 {
+  color:#333333;
+  font-family: "Droid Sans", arial, serif;
+  font-size:25px;
+  letter-spacing: -2px;
+  font-size-adjust:none;
+  font-stretch:normal;
+  font-style:normal;
+  font-variant:normal;
+  font-weight:bold;
+  line-height:1.4em;
+  //margin:1.5em 0 0.75em;
+  text-transform:uppercase;
+  position:relative;
+  //margin-top:-40px;
+  //border:3px solid black;
+  //border-width:1px solid black;
+}
+h2 ul li{display:inline;list-style:none;margin:0 5px 0;padding:0}
+
+
+//
+.menu {
+  height: 80px;
+  //border-left: 1px solid rgba(0,0,0,0.3);
+  //border-right: 1px solid rgba(255,255,255,0.3);
+  float: center;
+}
+
+.wrapper {
+  //font-size:0pt;
+  position:center;
+  width: 60%;
+  height: 80px;
+  background : transparent;//#464646;
+  //background : -webkit-gradient(linear, left top, left bottom, from(rgb(168,168,168)), to(rgb(69,69,69)));
+  //background : -moz-linear-gradient(top, rgb(168,168,168), rgb(69,69,69));
+  //border-top: 2px solid #939393;
+  position: relative;
+  left:20%;
+  margin-bottom: 30px;
+}
+
+.container {
+  width: auto;
+  margin: auto;
+  align:center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul.menu {
+  height: 80px;
+  border-left: 0px solid rgba(0,0,0,0.3);
+  border-right: 0px solid rgba(255,255,255,0.3);
+  float:relative;
+  position-left:90%;
+
+}
+
+ul.menu lin {
+  list-style: none;
+  box-shadow:10px 5px 5px black;
+  float:left;
+  height: 79px;
+  margin-left:15px;
+  text-align: center;
+  background: -webkit-gradient(radial, 50% 100%, 10, 50% 50%, 90, from(rgba(31,169,244,1)), to(rgba(0,28,78, 1)) );
+  background: -moz-radial-gradient(center 80px 45deg, circle cover, rgba(31,169,244,1) 0%, rgba(0,28,78, 1) 100%);
+}
+
+ul lin a {
+  display: inline-block;
+  font-size:16pt;
+  padding: 0 20px;
+  border-left: 0px solid rgba(255,255,255,0.01);
+  border-right: 0px solid rgba(0,0,0,0.1);
+  text-align: center;
+  line-height: 79px;
+  background : -webkit-gradient(linear, left top, left bottom, from(rgb(168,168,168)), to(rgb(69,69,69)));
+  background : -moz-linear-gradient(top, rgb(168,168,168), rgb(69,69,69));
+  -webkit-transition-property: background;
+  -webkit-transition-duration: 1000ms;
+  -moz-transition-property: background;
+  -moz-transition-duration: 700ms;
+}
+
+ul lin a:hover {
+  background : rgba(0,0,0,0.3);
+  opacity:1.25;
+}
+
+ul lin.active a{
+  background: -webkit-gradient(radial, 50% 100%, 10, 50% 50%, 90, from(rgba(31,169,244,1)), to(rgba(0,28,78, 1)) );
+  background: -moz-radial-gradient(center 0px 45deg, circle cover, rgba(31,169,244,1) 0%, rgba(0,28,78, 1) 100%);
 }
 
