@@ -7,7 +7,7 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 
-  <link rel="shortcut icon" href="/assets/rocket.ico" />
+  <link rel="shortcut icon" href="/assets/kite.ico" />
 
   <script type="text/javascript">
 
@@ -54,12 +54,12 @@
 <div class="wrapper">
   <div class="container">
     <ul class="menu" >
-    <lin class="h2"><%= link_to 'Me', '/' %></lin>
-    <lin class="h2"><%= link_to 'Resume', '/resume' %></lin>
-    <lin class="h2"><%= link_to 'Projects', '/projects' %></lin>
-    <lin class="h2"><%= link_to 'Links', '/links' %></lin>
-    <lin class="h2"><%= link_to 'Photography', '/photography' %></lin>
-    <lin class="h2"><%= link_to 'Contact', '/contact' %></lin>
+    <lin><%= link_to 'Me', '/' %></lin>
+    <lin><%= link_to 'Resume', '/resume' %></lin>
+    <lin><%= link_to 'Projects', '/projects' %></lin>
+    <lin><%= link_to 'Links', '/links' %></lin>
+    <lin><%= link_to 'Photo', '/photo' %></lin>
+    <lin><%= link_to 'Contact', '/contact' %></lin>
   </ul>
   </div>
 </div>
@@ -75,7 +75,7 @@
 
 <section id="pagecontent">
 <header>
-<h1>Zach's Webspace<%= addColon(yield(:title)) %> <text style="color:#6F6F6F"><%= yield(:title) %></text></h1>
+<h1>Zach's Cyberplace<%= addColon(yield(:title)) %> <text style="color:#6F6F6F"><%= yield(:title) %></text></h1>
 </header>
 
 <%= yield %>
