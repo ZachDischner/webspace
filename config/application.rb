@@ -68,6 +68,6 @@ module Webspace
     config.assets.version = '1.0'
 
     # Precompile Jquery
-    config.assets.precompile += ['jquery-1.9.1.js']
+    config.assets.precompile = false
   end
 end
