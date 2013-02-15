@@ -1,0 +1,13 @@
+ <!--app/views/flickr/_sidebar_widget.html.erb-->
+
+<div class="flickr">
+  <ul class="flickr-list">
+    <% photos.each do |row| -%>
+        <li>
+          <% row.each do |p| %>
+              <%= link_to(image_tag(p.url(:small), :class => 'flickr_photo', :title => p.title, :border => 0, :size => '200x200'), p.url_photopage) %>
+          <% end %>
+        </li>
+    <% end -%>
+  </ul>
+</div>

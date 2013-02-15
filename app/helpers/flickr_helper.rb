@@ -2,8 +2,8 @@
 
 module FlickrHelper
   def user_photos(user_id, photo_count = 12)
-    flickr = Flickr.new(File.join(RAILS_ROOT, 'config', 'flickr.yml'))
-    flickr.photos.search(:user_id => user_id).values_at(0..(photo_count - 1))
+    flickr = Flickr.new(File.join(Rails.root, 'config', 'flickr.yml'))
+    flickr.photos.search(:user_id => user_id, :image_size => :small_320).values_at(0..(photo_count - 1))
   end
 
   def render_flickr_sidebar_widget(user_id, photo_count = 12, columns = 2)

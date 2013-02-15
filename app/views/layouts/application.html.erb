@@ -5,6 +5,7 @@
   <title>Zach Dischner</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag 'jquery', 'application' %>
   <%= csrf_meta_tags %>
 
   <link rel="shortcut icon" href="/assets/kite.ico" />
@@ -64,10 +65,15 @@
   </div>
 </div>
 
-<aside style="width:333px;padding-right:10px;"id="pageimage">
-<img src="http://farm8.staticflickr.com/7144/6625771707_3f7bdda2b9.jpg" width="333" height="500" alt="A Light in the Night"></a>
+<aside style="width:300px;padding-right:1em; position: static; left: -10px;"id="pageimage">
+<img src="http://farm8.staticflickr.com/7144/6625771707_3f7bdda2b9.jpg" width="300" height="480" alt="A Light in the Night"></a>
 </aside>
 
+<aside style="padding-left:20px;position:absolute;right:1%">
+  <% cache ("flickr_sidebar") do %>
+    <%= render_flickr_sidebar_widget('35557234@N07', photo_count = 12, columns = 2)      %>
+  <% end %>
+</aside>
 
 
 
