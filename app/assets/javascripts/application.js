@@ -14,7 +14,7 @@
 //= require jquery_ujs
 //= require_tree .
 
-$(document).ready(function(){
+//$(document).ready(function(){
 //    $('aside').mouseenter(function(){
 //        $('title').fadeOut('slow',0.5);
 //    });
@@ -26,35 +26,35 @@ $(document).ready(function(){
 //        $('div.me-div').fadeOut('fast',.5);
 //    });
 
-    $('#pageimage').mouseenter(function(){
-//        $('#pageimage').fadeTo('fast',0.1);
-        $('#flickr-list').shuffle();
-    });
+//    $('#pageimage').mouseenter(function(){
+////        $('#pageimage').fadeTo('fast',0.1);
+//        $('#flickr-list').shuffle();
+//    });
+//
+//
+//})
 
-
-})
-
-(function($){
-
-    $.fn.shuffle = function() {
-
-        var allElems = this.get(),
-            getRandom = function(max) {
-                return Math.floor(Math.random() * max);
-            },
-            shuffled = $.map(allElems, function(){
-                var random = getRandom(allElems.length),
-                    randEl = $(allElems[random]).clone(true)[0];
-                allElems.splice(random, 1);
-                return randEl;
-            });
-
-        this.each(function(i){
-            $(this).replaceWith($(shuffled[i]));
-        });
-
-        return $(shuffled);
-
-    };
-
-})(jQuery);
+//(function($){
+//
+//    $.fn.shuffle = function() {
+//
+//        var allElems = this.get(),
+//            getRandom = function(max) {
+//                return Math.floor(Math.random() * max);
+//            },
+//            shuffled = $.map(allElems, function(){
+//                var random = getRandom(allElems.length),
+//                    randEl = $(allElems[random]).clone(true)[0];
+//                allElems.splice(random, 1);
+//                return randEl;
+//            });
+//
+//        this.each(function(i){
+//            $(this).replaceWith($(shuffled[i]));
+//        });
+//
+//        return $(shuffled);
+//
+//    };
+//
+//})(jQuery);
