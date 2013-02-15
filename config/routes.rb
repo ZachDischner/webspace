@@ -4,6 +4,7 @@ Webspace::Application.routes.draw do
   match '/resume',   to: 'static_pages#resume'
   match '/projects', to: 'static_pages#projects'
   match '/wine',     to: 'static_pages#wine'
+  match '/photo',    to: 'static_pages#photo'
   match '/links',    to: 'static_pages#links'
   match '/contact',  to: 'static_pages#contact'
 

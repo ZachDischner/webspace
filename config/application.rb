@@ -66,5 +66,8 @@ module Webspace
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    # Precompile Jquery
+    config.assets.precompile += ['jquery-1.9.1.js']
   end
 end
