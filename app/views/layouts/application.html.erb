@@ -70,9 +70,9 @@
 </aside>
 
 <aside style="padding-left:20px;position:absolute;right:1%">
-  <%# cache ("flickr_sidebar") do %>
-    <%#= render_flickr_sidebar_widget('35557234@N07', photo_count = 12, columns = 2)      %>
-  <%# end %>
+  <% cache ("flickr_sidebar") do %>
+    <%= render_flickr_sidebar_widget('35557234@N07', photo_count = 12, columns = 2)      %>
+  <% end %>
 </aside>
 
 
