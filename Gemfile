@@ -6,6 +6,8 @@ gem 'pg', '0.12.2'
 # flickr Gem!!
 gem 'flickr_fu'
 
+gem 'thin'
+
 group :development, :test do
   gem 'sqlite3', '1.3.5'
   gem 'rspec-rails', '2.11.0'

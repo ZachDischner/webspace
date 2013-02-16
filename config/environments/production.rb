@@ -1,7 +1,8 @@
 Webspace::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
   #for heroku
-  #config.assets.precompile = true
+  config.assets.compile = true
+  config.assets.precompile = true
 
   # Code is not reloaded between requests
   config.cache_classes = true
@@ -17,7 +18,7 @@ Webspace::Application.configure do
   config.assets.compress = true
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
-  config.assets.compile = false
+  #config.assets.compile = false
 
   # Generate digests for assets URLs
   config.assets.digest = true
