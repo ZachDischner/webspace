@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
 gem 'pg', '0.12.2'
+#gem 'sitemap_generator'
+#gem 'metamagic'
+#gem 'dynamic_sitemaps'
 
 # flickr Gem!!
 gem 'flickr_fu'

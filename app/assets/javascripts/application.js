@@ -14,7 +14,7 @@
 //= require jquery_ujs
 //= require_tree .
 
-//$(document).ready(function(){
+$(document).ready(function(){
 //    $('aside').mouseenter(function(){
 //        $('title').fadeOut('slow',0.5);
 //    });
@@ -26,35 +26,43 @@
 //        $('div.me-div').fadeOut('fast',.5);
 //    });
 
-//    $('#pageimage').mouseenter(function(){
-////        $('#pageimage').fadeTo('fast',0.1);
-//        $('#flickr-list').shuffle();
-//    });
-//
-//
-//})
+    // Fade out/in projects:
+    $('.projbox').fadeTo(0, 0.5);
+    $('.projbox:first').fadeTo(0,1);
+    $('.projbox').mouseenter( function() {
+        $('.projbox').fadeTo(0, 0.5);
+        $(this).fadeTo('fast', 1.0);
+    });
 
-//(function($){
-//
-//    $.fn.shuffle = function() {
-//
-//        var allElems = this.get(),
-//            getRandom = function(max) {
-//                return Math.floor(Math.random() * max);
-//            },
-//            shuffled = $.map(allElems, function(){
-//                var random = getRandom(allElems.length),
-//                    randEl = $(allElems[random]).clone(true)[0];
-//                allElems.splice(random, 1);
-//                return randEl;
-//            });
-//
-//        this.each(function(i){
-//            $(this).replaceWith($(shuffled[i]));
-//        });
-//
-//        return $(shuffled);
-//
-//    };
-//
-//})(jQuery);
+    $('.pageimage').mouseenter(function(){
+//        $('#pageimage').fadeTo('fast',0.1);
+        $('#flickr-list li').shuffle();
+    });
+
+
+})
+
+(function($){
+
+    $.fn.shuffle = function() {
+
+        var allElems = this.get(),
+            getRandom = function(max) {
+                return Math.floor(Math.random() * max);
+            },
+            shuffled = $.map(allElems, function(){
+                var random = getRandom(allElems.length),
+                    randEl = $(allElems[random]).clone(true)[0];
+                allElems.splice(random, 1);
+                return randEl;
+            });
+
+        this.each(function(i){
+            $(this).replaceWith($(shuffled[i]));
+        });
+
+        return $(shuffled);
+
+    };
+
+})(jQuery);

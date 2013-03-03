@@ -1,13 +1,51 @@
 <% provide(:title, 'Projects') %>
-
+<% meta description: "Zach's Projects.",
+        keywords: "kevin, dinkel, website, webspace, personal, projects, experience, work, professional, dande, mms, hasp, daystar" %>
 <p>
-Below are a list of projects I have been or am currently involved in:
-
-<ul>
-<li><%= link_to 'DayStar Engineering', 'http://daystarengineering.wordpress.com/', target: "_blank" %>: a collection of high altitude balloon satellites on which I am a systems and software engineering consultant </li>
-<!-- <li><%= link_to 'DANDE', 'http://en.wikipedia.org/wiki/Drag_and_Atmospheric_Neutral_Density_Explorer', target: "_blank" %>: a 50 kg spherical satellite developed at the <%= link_to 'Colorado Space Grant Consortium', 'http://spacegrant.colorado.edu/', target: "_blank" %> on which I designed and implemented flight software</li>
-<li><%= link_to 'BOWSER', 'http://spacegrant.colorado.edu/previous-hasp-projects/hasp-2009', target: "_blank" %>: a 50 kg spherical satellite developed at the <%= link_to 'HASP', 'http://laspace.lsu.edu/hasp/', target: "_blank" %> on which I designed and implemented flight software</li> -->
-</ul>
-
+  <b>Below is a list of projects I have been or am currently involved in:</b>
 </p>
+
+<table class='projbox' border="0" cellpadding="10px">
+  <tr>
+    <td>
+      <%= link_to image_tag("/assets/daystarlogo.jpeg", alt: "DayStar Engineering", width: 80), 'http://daystarengineering.wordpress.com/', target: "_blank" %>
+    </td>
+    <td>
+      <p><b><%= link_to 'DayStar Engineering', 'http://daystarengineering.wordpress.com/', target: "_blank" %>:</b>Systems, software, and electronics consultant on high altitude balloon observing missions.</p>
+    </td>
+  </tr>
+</table>
+
+<table class='projbox' border="0" cellpadding="10px">
+  <tr>
+    <td>
+      <%= link_to image_tag("/assets/AIMCIPSlogo.png", alt: "Cloud Imaging and Particle Size", width: 80), 'http://lasp.colorado.edu/home/missions-projects/quick-facts-mms/', target: "_blank" %>
+    </td>
+    <td>
+      <p><b><%= link_to 'AIM-CIPS', 'http://lasp.colorado.edu/aim/index.html', target: "_blank" %>:</b> Data systems and software engineer for the CIPS instrument on <%= link_to 'LASP', 'http://lasp.colorado.edu/home/', target: "_blank" %>'s AIM satellite</p>
+    </td>
+  </tr>
+</table>
+
+<table class='projbox' border="0" cellpadding="10px">
+  <tr>
+    <td>
+      <%= link_to image_tag("/assets/Hyperionlogo.jpeg", alt: "Hyperion", width: 80), 'http://tigonenertec.com/solution.html', target: "_blank" %>
+    </td>
+    <td>
+      <p><b><%= link_to 'Hyperion', 'http://tigonenertec.com/solution.html', target: "_blank" %>:</b> Electronics and embedded systems lead on blended wing body UAV testbed for  <%= link_to 'Tigon Enertic', 'http://tigonenertec.com', target: "_blank" %>'s hybrid propulsion system.</p>
+    </td>
+  </tr>
+</table>
+
+<!--<table class='projbox' border="0" cellpadding="10px">-->
+  <!--<tr>-->
+    <!--<td>-->
+      <!--<%#= link_to image_tag("/assets/hasplogo.jpg", alt: "BOWSER", width: 80), 'http://spacegrant.colorado.edu/previous-hasp-projects/hasp-2009', target: "_blank" %>-->
+    <!--</td>-->
+    <!--<td>-->
+      <!--<p><b><#%= link_to 'BOWSER', 'http://spacegrant.colorado.edu/previous-hasp-projects/hasp-2009', target: "_blank" %>:</b> a balloon satellite developed for <%= link_to 'HASP', 'http://laspace.lsu.edu/hasp/', target: "_blank" %> to study the feasibility of high altitude observatories on which I served as project manager</p>-->
+    <!--</td>-->
+  <!--</tr>-->
+<!--</table>-->
 
