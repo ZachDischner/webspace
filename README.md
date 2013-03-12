@@ -1,2 +1,3 @@
-Kevin's Tiny Webspace
-www.kevindinkel.com
+Now Zach's tiny website! 
+
+zachdischner.com

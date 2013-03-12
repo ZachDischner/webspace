@@ -6,6 +6,9 @@ gem 'sitemap_generator'
 gem 'metamagic'
 gem 'dynamic_sitemaps'
 
+# Bootstrap for increased awesomeness
+gem 'bootstrap-sass', '2.1'
+
 # flickr Gem!!
 gem 'flickr_fu'
 
